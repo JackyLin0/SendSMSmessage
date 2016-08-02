@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="簡訊發送系統"
+        android:textSize="25sp"
+        android:layout_margin="10sp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收件人 "
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextReceiver"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="100sp"
+        android:id="@+id/EditTextContent"
+        android:layout_margin="10sp"
+        android:hint="傳送內容..."
+        android:gravity="top|left"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20sp"
+        >
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text=" 發 送 "
+            android:textSize="20sp"
+            android:id="@+id/ButtonSend"
+            />
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text=" 取 消 "
+            android:layout_marginLeft="10sp"
+            android:textSize="20sp"
+            android:id="@+id/ButtonCancel"
+            />
+    </LinearLayout>
+</LinearLayout>
